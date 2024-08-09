@@ -69,13 +69,13 @@ No arquivo tsconfig.json configuramos a saida da aplicação para "outDir": "dis
 **Configuração do arquivo package.json**
 
  No arquivo package.json na parte de 
-
+```
  scripts.   "scripts": {
-  <p>"build": "tsc",</p>
-  <p>"dev": "ts-node-dev --respawn --transpile-only src/server.ts",</p>
-   <p> "test": "echo \"Error: no test specified\" && exit 1"</p>
+  "build": "tsc",
+  "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+  "test": "echo \"Error: no test specified\" && exit 1"
   },
-
+```
 - dev: Este é o nome do script. Você pode executar esse script com o comando npm run dev. Ele é usado para iniciar o processo de desenvolvimento.
 
 - ts-node-dev: É uma ferramenta que combina ts-node e nodemon, permitindo executar arquivos TypeScript diretamente no Node.js e reiniciar automaticamente o servidor sempre que detecta alterações no código.
@@ -92,4 +92,64 @@ npm run build
 ```
 
 O comando vai gerar uma pasta dist com arquivo index.js, versão do arquivo ts convertida para js.
- 
+
+
+ <br>
+
+**Configuração para execultar testes**
+
+<p>
+No terminal digite:</p>
+
+```
+npm i -D jest ts-jest
+```
+O comando vai instalar a biblioteca jest de test.
+ <br>
+
+Agora devemos ciar um arquivo chamado jest.config.js e digitar.
+
+```
+module.exports = {
+    preset: 'ts-jest',
+    testEnvironment: 'node',
+};
+```
+
+Agora criar um pasta chamada de test na raiz do projeto.
+ Os arquivos devem se criados como *.test.ts, para que o programa entenda que é arquivo de teste.
+
+ <br>
+
+**Configuração tipos de metodos disponiveis para testes**
+
+
+No terminal digite:</p>
+
+```
+npm i -D @types/jest @types/node
+```
+O comando vai instalar a bibliotecas que ajudaram a identificar o tipos, na execulsão dos testes em determinadas bibliotecas.
+
+ No arquivo package.json na parte de 
+```
+ scripts.   "scripts": {
+  "build": "tsc",
+  "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+  "test": "jest"
+  },
+```
+
+ No vscode deves instalar o plugin **Jest Runner**
+ Isto permitira que você teste no propio vscode ou 
+
+<p>
+No terminal digite:</p>
+
+```
+npm t
+```
+
+O comando detectará o teste e execultará.
+
+Lembrando qua a extensão do arquivo deve ser *.test.ts ou *.spec.ts
