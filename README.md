@@ -72,7 +72,7 @@ No arquivo tsconfig.json configuramos a saida da aplicação para "outDir": "dis
 ```
  scripts.   "scripts": {
   "build": "tsc",
-  "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+  "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
   "test": "echo \"Error: no test specified\" && exit 1"
   },
 ```
