@@ -5,4 +5,6 @@
 // import './tipos/funcoes'
 // import './tipos/objetos'
 // import './tipos/produto'
-import './tipos/uniao'
+// import './tipos/uniao'
+// import './tipos/never'
+import './tipos/null'
