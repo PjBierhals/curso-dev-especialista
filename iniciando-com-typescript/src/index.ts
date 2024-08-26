@@ -11,4 +11,5 @@
 // import './tipos/desafio_final'
 //import './oo/classe_1'
 //import './oo/classe_2'
-import './oo/classe_21'
+//import './oo/classe_21'
+import './oo/classe_3produto'
