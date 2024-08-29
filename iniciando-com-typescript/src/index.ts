@@ -1,3 +1,4 @@
+
 // import './tipos/array'
 // import './tipos/enums'
 // import './tipos/enums_const'
@@ -13,4 +14,5 @@
 // import './oo/classe_2'
 // import './oo/classe_21'
 // import './oo/classe_3produto'
-import './oo/desafio_estatico'
+// import './oo/desafio_estatico'
+import './interfaces/usuario'

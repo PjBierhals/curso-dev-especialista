@@ -1,8 +1,10 @@
 class DesafioStatico{
-   static readonly nota: number = 1000
+  nota: number = 1000
 
+   
     static execultar(){
-        console.log(this.nota)
+        const  instacia = new DesafioStatico()
+        console.log(instacia.nota)
     }
 }
 
