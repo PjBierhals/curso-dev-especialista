@@ -1,9 +1,9 @@
-interface flexivel {
+interface Flexivel {
     nome: string
     [chave: string]: any
 }
 
-const f1: flexivel = {
+const f1: Flexivel = {
     nome: 'Juliano',
     idade: 44,
     salario: 1234,

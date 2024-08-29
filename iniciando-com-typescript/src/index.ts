@@ -17,4 +17,5 @@
 // import './oo/desafio_estatico'
 // import './interfaces/usuario'
 // import './interfaces/flexivel'
-import './interfaces/flexivel1'
+// import './interfaces/flexivel1'
+import './interfaces/funcao'
