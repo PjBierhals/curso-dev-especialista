@@ -15,4 +15,6 @@
 // import './oo/classe_21'
 // import './oo/classe_3produto'
 // import './oo/desafio_estatico'
-import './interfaces/usuario'
+// import './interfaces/usuario'
+// import './interfaces/flexivel'
+import './interfaces/flexivel1'
